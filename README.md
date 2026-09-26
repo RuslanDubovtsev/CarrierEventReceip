@@ -64,3 +64,7 @@ data-3 тестирует воркер на недопуск изменения 
 <img width="657" height="137" alt="image" src="https://github.com/user-attachments/assets/c488ffa1-94c4-4650-8bce-96b909da00c8" />    
 
 Сначала произошел сбой, но через 5 секунд воркер повторно и успешно обработал событие  
+
+## Workflow
+
+Работает, доступен в Actions
