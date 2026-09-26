@@ -1,5 +1,5 @@
 ## Локальный бэкенд для сохранения событий перевозчика и его обработки отдельным worker.
-
+### manual-checks.md и ai-log в корне проекта
 ## Схема данных  
    <img width="400" height="400" alt="image" src="https://github.com/user-attachments/assets/6e9a6b1b-aa5c-41a4-8326-68e302e5fa70" />  
    
