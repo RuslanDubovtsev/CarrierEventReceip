@@ -24,10 +24,14 @@ def forming_data():
             {"event_id": 'e2', "shipment_id": 3, "status": 'delivered'},
             {"event_id": 'e3', "shipment_id": 3, "status": 'in_transit'},
             {"event_id": 'e3', "shipment_id": 3, "status": 'delivered'}]
-    data_2 = [{"event_id": 'e4', "shipment_id": 4, "status": 'in_transit'},
-              {"event_id": 'e5', "shipment_id": 4, "status": 'delivered'}]
+    data_2 = [{"event_id": 'e4', "shipment_id": 1, "status": 'in_transit'},
+              {"event_id": 'e5', "shipment_id": 1, "status": 'delivered'}]
+    data_3 = [{"event_id": 'e6', "shipment_id": 1, "status": 'in_transit'}]
+    data_4 = [{"event_id": 'e2', "shipment_id": 2, "status": 'in_transit'},
+              {"event_id": 'e2', "shipment_id": 2, "status": 'delivered'}]
 
-    for elem in data_1:
+
+    for elem in data_4:
         res = requests.post(url, json=elem, headers=headers)
         print(res.text)
 

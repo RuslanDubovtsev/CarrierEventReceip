@@ -20,8 +20,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 env = environ.Env(
     DEBUG=(bool, False)
 )
-env_file = os.path.join(BASE_DIR, '.env')
-if os.path.exists(env_file):
+env_file = BASE_DIR.parent / '.env'
+
+if env_file.exists():
     environ.Env.read_env(env_file)
 
 SECRET_WEBHOOK = env('SECRET_WEBHOOK')
